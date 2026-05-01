@@ -1,5 +1,3 @@
-*.pt
-*.onnx
 *.log
 *.pyc
 __pycache__/
