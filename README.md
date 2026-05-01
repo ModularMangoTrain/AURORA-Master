@@ -161,6 +161,26 @@ AURORA-Master/
 
 ## Setting Up on a New Raspberry Pi
 
+### Option A: Auto-Installer (Recommended)
+
+SSH into the Pi and run:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/ModularMangoTrain/AURORA-Master/main/Drone-Machine-Learning/install.py | python3
+```
+
+This will automatically:
+- Update the system
+- Enable SPI, I2C and Camera
+- Clone the repository
+- Create a virtual environment
+- Install all dependencies including pysenxor
+- Install and enable systemd services
+- Set CPU governor to performance mode
+- Prompt for a reboot
+
+### Option B: Manual Setup
+
 ### 1. Flash Raspberry Pi OS
 
 Flash the latest **Raspberry Pi OS (64-bit)** to an SD card using Raspberry Pi Imager. During setup:
