@@ -1,0 +1,13 @@
+ultralytics==8.4.16
+picamera2==0.3.34
+smbus2==0.4.3
+spidev==3.6
+gpiozero==2.0.1
+lgpio==0.2.2.0
+rpi-lgpio==0.6
+bleak==0.22.3
+numpy==2.4.2
+opencv-python==4.13.0.92
+torch==2.10.0
+torchvision==0.25.0
+pysenxor @ file:///home/aurora/pysenxor-master
