@@ -1,0 +1,9 @@
+*.pt
+*.onnx
+*.log
+*.pyc
+__pycache__/
+drone_env/
+yolo_env/
+.venv/
+ble_devices.json
