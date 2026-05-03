@@ -1,6 +1,8 @@
-# AURORA — Autonomous Unmanned Reconnaissance and Observation Aerial System
+# AURORA — Aerial Urban Rescue (for) Observation (and) Recovery Aid
 
 AURORA is a drone-mounted search and rescue detection system built on a Raspberry Pi 5. It fuses RGB camera data with thermal infrared imaging to detect survivors, triggers LED alerts, and passively scans for nearby Bluetooth Low Energy devices. The system is designed to run fully autonomously on boot with no user interaction required.
+
+Co-developed with Salman Aurmeeraly 
 
 ---
 
@@ -48,12 +50,12 @@ AURORA is a drone-mounted search and rescue detection system built on a Raspberr
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                   CNN.py (Main Process)              │
+│                   CNN.py (Main Process)             │
 │                                                     │
-│  ┌─────────────┐   ┌──────────────┐   ┌──────────┐ │
-│  │ RGB Camera  │   │   Thermal    │   │   LED    │ │
-│  │  Picamera2  │   │  MI48 Thread │   │  Thread  │ │
-│  └──────┬──────┘   └──────┬───────┘   └────┬─────┘ │
+│  ┌─────────────┐   ┌──────────────┐   ┌──────────┐  │
+│  │ RGB Camera  │   │   Thermal    │   │   LED    │  │
+│  │  Picamera2  │   │  MI48 Thread │   │  Thread  │  │
+│  └──────┬──────┘   └──────┬───────┘   └────┬─────┘  │
 │         │                 │                │        │
 │  ┌──────▼──────┐          │         ┌──────▼─────┐  │
 │  │ YOLO Process│          │         │  SPI0 CE0  │  │
@@ -68,7 +70,7 @@ AURORA is a drone-mounted search and rescue detection system built on a Raspberr
 └─────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────┐
-│              ble_scan.py (Separate Process)          │
+│              ble_scan.py (Separate Process)         │
 │  Scans for BLE devices → writes to ble_devices.json │
 └─────────────────────────────────────────────────────┘
 ```
