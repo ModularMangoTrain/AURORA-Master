@@ -1,4 +1,4 @@
-# AURORA — Aerial Urban Rescue (for) Observation (and) Recovery Aid
+# AURORA - Aerial Urban Rescue (for) Observation (and) Recovery Aid
 
 AURORA is a drone-mounted search and rescue detection system built on a Raspberry Pi 5. It fuses RGB camera data with thermal infrared imaging to detect survivors, triggers LED alerts, and passively scans for nearby Bluetooth Low Energy devices. The system is designed to run fully autonomously on boot with no user interaction required.
 
